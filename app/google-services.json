@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "580692368900",
+    "project_id": "wiz-mart",
+    "storage_bucket": "wiz-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580692368900:android:d7e56406f80e9909e3df51",
+        "android_client_info": {
+          "package_name": "com.wiz.wizmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580692368900-m40hh5l8iqs18ubeoqv7cl3t3p5altjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXGXPg3_doPntMx7xk16X1bC5lD1pcleY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580692368900-m40hh5l8iqs18ubeoqv7cl3t3p5altjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

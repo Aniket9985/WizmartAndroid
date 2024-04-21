@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wiz.wizmart.pages.CartProductShowActivity">
+    <RelativeLayout
+        android:id="@+id/lk"
+        android:layout_width="match_parent"
+        android:background="@color/navy"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgcartS"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imgcartS"
+            android:fontFamily="@font/product_sans_bold"
+            android:gravity="start"
+            android:text="Cart Products"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/ba_color"
+        android:layout_marginTop="5dp"
+        android:id="@+id/recyclerView"/>
+
+
+</LinearLayout>

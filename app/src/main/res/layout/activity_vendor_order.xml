@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wiz.wizmart.pages.VendorOrderActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orders"
+        android:textAlignment="center"
+        android:fontFamily="@font/product_sans_bold"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/navy"
+        android:id="@+id/t"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLyt"
+        style="@style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        app:tabIndicatorColor="@color/red"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/blue"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerLyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLyt" />
+
+
+</RelativeLayout>

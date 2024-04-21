@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="checkout">
+        <item>Cash On Delivery</item>
+        <item>Online</item>
+    </string-array>
+
+    <string-array name="Set_Status">
+        <item>required</item>
+        <item>not required</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>morning</item>
+        <item>afternoon</item>
+        <item>evening</item>
+    </string-array>
+
+    <string-array name="onestatus">
+        <item>out for delivery</item>
+        <item>delivered</item>
+    </string-array>
+
+</resources>

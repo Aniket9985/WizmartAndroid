@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:elevation="25sp"
+    tools:context="com.wiz.wizmart.pages.CategoryActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/serchviw"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_margin="15sp"
+        android:background="@drawable/ser_bg"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search categories Here... " />
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/serchviw"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/wm"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyt"
+        android:layout_marginTop="15sp"
+        android:orientation="horizontal">
+        <com.smarteist.autoimageslider.SliderView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal"
+            app:sliderIndicatorMargin="15sp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="@color/ba_color"
+            app:sliderIndicatorUnselectedColor="@color/white"
+            app:sliderScrollTimeInSec="3"
+            android:id="@+id/slider"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:sliderStartAutoCycle="true"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyt3"
+        android:layout_above="@id/lyt4"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="25sp"
+            android:id="@+id/txt"
+            android:fontFamily="@font/product_sans_bold_italic"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ba_color"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+            
+        
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lyt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomBar"
+            app:itemBackground="@color/blue_gutio"
+            app:itemTextColor="@drawable/bottom_color"
+            app:menu="@menu/menu"
+            app:itemIconTint="@drawable/bottom_color"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

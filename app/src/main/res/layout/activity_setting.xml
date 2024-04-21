@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wiz.wizmart.pages.SettingActivity">
+    <RelativeLayout
+        android:id="@+id/lk"
+        android:layout_width="match_parent"
+        android:background="@color/navy"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgbtn"
+            android:layout_width="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgbtn"
+            android:fontFamily="@font/product_sans_bold"
+            android:gravity="start"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:id="@+id/order"
+            android:background="@drawable/light_bg">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/img"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="Order"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/profile"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/light_bg">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/img3"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/policies"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/light_bg">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_policy_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/img5"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="Policies"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/terms"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/light_bg">
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_policy_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/img7"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="Terms Of Services"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/refund"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/light_bg">
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_policy_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/img9"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="Refund And Cancel Policy  "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+
+                android:layout_marginStart="25sp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="15sp"
+            android:background="@color/ba_color"/>
+        <TextView
+            android:id="@+id/txtLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textSize="20dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

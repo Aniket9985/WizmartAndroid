@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wiz.wizmart.pages.CalenderActivity">
+    <RelativeLayout
+        android:id="@+id/lk"
+        android:layout_width="match_parent"
+        android:background="@color/navy"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:id="@+id/imgbtn"
+            android:layout_width="70dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/imgbtn"
+            android:fontFamily="@font/product_sans_bold"
+            android:gravity="start"
+            android:text="Calender"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1,2,3,4,5,6,7">
+                    <TableRow>
+
+                        <TextView
+                            android:text="ORDER ID"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:textAlignment="center"
+                            android:layout_width="100dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/header_bg"/>
+                        <TextView
+                            android:text="QTY"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_width="70dp"
+                            android:padding="8dp"
+                            android:textAlignment="center"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/header_bg"/>
+                        <TextView
+                            android:text="PACKSIZE"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:layout_width="120dp"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:textAlignment="center"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/header_bg"/>
+                        <TextView
+                            android:text="ORDER DATE"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_width="160dp"
+                            android:padding="8dp"
+                            android:textAlignment="center"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/header_bg"/>
+                        <TextView
+                            android:text="DELIVERY STATUS"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:layout_width="190dp"
+                            android:layout_marginStart="10dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/header_bg"/>
+                        <TextView
+                            android:text="SET STATUS"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:padding="8dp"
+                            android:layout_width="190dp"
+                            android:textAlignment="center"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/header_bg"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/recycleCalender"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

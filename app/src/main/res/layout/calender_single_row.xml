@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:stretchColumns="1,2,3,4,5,6,7"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <TableRow>
+
+        <TextView
+            android:id="@+id/order_id"
+            android:text="ORDER ID"
+            android:textSize="18sp"
+            android:layout_width="100dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@drawable/table_bg"
+            android:typeface="serif"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/cQty"
+            android:text="QTY"
+            android:layout_width="70dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/table_bg"
+            android:typeface="serif"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/cPackSize"
+            android:text="PACKSIZE"
+            android:textSize="18sp"
+            android:layout_width="120dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:background="@drawable/table_bg"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/order_date"
+            android:text="ORDER DATE"
+            android:textSize="18sp"
+            android:layout_width="160dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:background="@drawable/table_bg"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+        <TextView
+            android:id="@+id/delivery_status"
+            android:text="DELIVERY STATUS"
+            android:textSize="18sp"
+            android:layout_width="190dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textAlignment="center"
+            android:background="@drawable/table_bg"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_height="match_parent"
+            android:id="@+id/tp"
+            android:textSize="18sp"
+            android:layout_width="190dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:id="@+id/set_not"
+                android:text="not required"
+                android:textSize="18sp"
+                android:layout_width="190dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textAlignment="center"
+                android:background="@drawable/login_btn_shape"
+                android:visibility="gone"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/set_required"
+                android:text="required"
+                android:textSize="18sp"
+                android:layout_width="190dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:background="@drawable/login_btn_shape"
+                android:layout_marginStart="10dp"/>
+
+
+    </TableRow>
+
+</TableLayout>
